@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css" />
+	<title>Bilans - Robocze</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md mb-4">
+		<div class="container-fluid ">
+			<a class="logo display-6 fw-bold lh-1 mb-3 text-secondary pe-5" href="../Strona główna/index.html">Budget Manager</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+				aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse show" id="navbarCollapse">
+				<ul class="navbar-nav me-auto mb-2 mb-md-0">
+					<li class="nav-item">
+						<a class="nav-link" href="../Strona główna/index.html">Strona Główna</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../Dodaj przychód/index.html">Dodaj przychód</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../Dodaj wydatek/index.html">Dodaj wydatek</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="../Pokaż bilans/index.html">Pokaż bilans</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Co zyskujesz</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Ustawienia</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">O mnie</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<a href="../Logowanie/index.html" class="btn btn-outline-primary me-2">Zaloguj się</a>
+					<a href="../Rejestracja/index.html" class="btn btn-primary">Zarejestruj się</a>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+	<main class="container py-5 col-12" style="width: 1000px;" id="Bilans">
+		<div class="card text-center rounded-4 shadow">
+			<div class="card-body">
+				<img class="d-block mx-auto mb-3" src="../Pictures/waga.png" alt="Dodaj przychód" width="72" height="57">
+				<section>
+					<h2 class="display-5 fw-bold">Bilans</h2>
+				</section>
+				<select class="form-select w-25 rounded mx-auto d-block" id="rodzaj">
+					<!-- <option value=""></option> -->
+					<option>z bieżącego miesiąca</option>
+					<option>z poprzedniego miesiąca</option>
+					<option>z bieżącego roku</option>
+					<option>niestandardowy zakres dat</option>
+				</select>
+				<article class="row row-cols-1 row-cols-md-2 mt-5 text-center">
+					<section class="col">
+						<div class="card mb-4 rounded-3 shadow-sm">
+							<div class="card-header py-3">
+								<h4 class="my-0 fw-normal">Przychody</h4>
+							</div>
+							<div class="card-body">
+								<ul class="list-unstyled mb-4">
+									<li>Wynagrodzenie: 5000.00zł</li>
+									<li>2020-07-01 - Wypłata</li>
+									<li class="border-top my-2"></li>
+									<li>Odsetki bankowe: 300.00zł</li>
+									<li>2020-07-09 - Lokata</li>
+									<li class="border mt-4 mb-2"></li>
+								</ul>
+								<h5>Suma przychodów: 5300.00zł</h5>
+							</div>
+						</div>
+					</section>
+					<section class="col">
+						<div class="card mb-4 rounded-3 shadow-sm">
+							<div class="card-header py-3">
+								<h4 class="my-0 fw-normal">Wydatki</h4>
+							</div>
+							<div class="card-body">
+								<ul class="list-unstyled mb-4">
+									<li>Ubranie: 500.00zł</li>
+									<li>2020-07-10 - Kurtka zimowa</li>
+									<li class="border-top my-2"></li>
+									<li>Wycieczka: 1200.00zł</li>
+									<li>2020-07-12 - Nad morze</li>
+									<li class="border-top my-2"></li>
+									<li>Jedzenie: 1000.00zł</li>
+									<li>2020-07-21</li>
+									<li class="border-top my-2"></li>
+									<li>Rozrywka: 260.00zł</li>
+									<li>2020-07-30 - Wyjście na miasto</li>
+									<li class="border mt-4 mb-2"></li>
+								</ul>
+								<h5>Suma Wydatków: 2960.00zł</h5>
+							</div>
+						</div>
+					</section>
+				</article>
+				<section class="card">
+					<h2 class="m-2 text-success">Bilans: 2340.00zł</h2>
+				</section>
+			</div>
+		</div>
+	</main>
+
+	<div class="piggy-background">
+		<img src="../Pictures/świnka ikona2.jpg" alt="Piggy-bank">
+	</div>
+
+	<footer class="container-fluid footer ">
+		<footer class="d-flex flex-wrap py-2">
+			<span>© 2023</span>
+		</footer>
+	</footer>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

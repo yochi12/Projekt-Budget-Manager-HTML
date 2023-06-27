@@ -1,0 +1,13 @@
+.logo{
+  color: rgb(87, 92, 18) !important;
+}
+
+nav{
+  background-color: #171a1d;
+}
+
+.footer{
+  background-color: #171a1d;
+  position: fixed;
+  bottom: 0;
+}
