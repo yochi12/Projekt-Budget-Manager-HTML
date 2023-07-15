@@ -7,14 +7,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-	<link rel="stylesheet" href="./style.css" />
-	<title>Logowanie - Robocze</title>
+	<link rel="stylesheet" href="../css/dzielone/style.css" />
+	<link rel="stylesheet" href="../css/pojedyncze/tło-css.css" />
+	<title>Rejestracja</title>
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-md mb-4">
 		<div class="container-fluid ">
-			<a class="logo display-6 fw-bold lh-1 mb-3 text-secondary pe-5" href="../Strona główna/index.html">Budget
+			<a class="logo display-6 fw-bold lh-1 mb-3 text-secondary pe-5" href="../index.html">Budget
 				Manager</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
 				aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
@@ -23,7 +24,7 @@
 			<div class="navbar-collapse collapse show" id="navbarCollapse">
 				<ul class="navbar-nav me-auto mb-2 mb-md-0">
 					<li class="nav-item">
-						<a class="nav-link" href="../Strona główna/index.html">Strona Główna</a>
+						<a class="nav-link" href="../index.html">Strona Główna</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Co zyskujesz</a>
@@ -33,8 +34,8 @@
 					</li>
 				</ul>
 				<form class="d-flex">
-					<a href="../Logowanie/index.html" class="btn btn-outline-primary me-2">Zaloguj się</a>
-					<a href="../Rejestracja/index.html" class="btn btn-primary">Zarejestruj się</a>
+					<a href="./logowanie.html" class="btn btn-outline-primary me-2">Zaloguj się</a>
+					<a href="./rejestracja.html" class="btn btn-primary">Zarejestruj się</a>
 				</form>
 			</div>
 		</div>
@@ -44,12 +45,12 @@
 		<div class="card rounded-4 my-5">
 			<section class="card-body shadow">
 				<div class="p-4 pb-4 border-bottom-0">
-					<h1 class="fw-bold mb-0 fs-2">Logowanie</h1>
+					<h1 class="fw-bold mb-0 fs-2">Załóż konto</h1>
 				</div>
 				<div class="modal-body p-4 pt-0">
 					<form class="">
 						<div class="form-floating mb-3">
-							<input type="login" class="form-control rounded-3" id="floatingInput" placeholder="Login">
+							<input type="text" class="form-control rounded-3" id="floatingInput" placeholder="Login">
 							<label for="floatingInput">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
 									viewBox="0 0 16 16">
@@ -68,18 +69,35 @@
 										d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z" />
 									<path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
 								</svg>
-								Hasło
-							</label>
-						</div>
-						<div class="form-check text-start my-3">
-							<input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
-							<label class="form-check-label" for="flexCheckDefault">
-								Zapamiętaj mnie
-							</label>
-						</div>
-						<a href="#" class="w-100 mb-2 btn btn-lg rounded-3 btn-primary">Zaloguj się</a>
-						</button>
-					</form>
+								Email
+								</label>
+							</div>
+							<div class="form-floating mb-3">
+								<input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Hasło">
+								<label for="floatingPassword">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key"
+										viewBox="0 0 16 16">
+										<path
+											d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z" />
+										<path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+									</svg>
+									Hasło
+								</label>
+							</div>
+							<div class="form-floating mb-3">
+								<input type="password" class="form-control rounded-3" id="floatingInput" placeholder="Hasło">
+								<label for="floatingInput">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key"
+										viewBox="0 0 16 16">
+										<path
+											d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z" />
+										<path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+									</svg>
+									Powtórz hasło
+								</label>
+							</div>
+							<a href="./rejestracja.html" class="w-100 my-2 btn btn-lg rounded-3 btn-primary">Zarejestruj się</a>
+							</button>
 				</div>
 		</div>
 		</article>
@@ -87,14 +105,8 @@
 	</main>
 
 	<div class="piggy-background">
-		<img src="../Pictures/świnka ikona2.jpg" alt="Piggy-bank">
+		<img src="../img/ikony/świnka ikona2.jpg" alt="Piggy-bank">
 	</div>
-
-	<footer class="container-fluid footer ">
-		<footer class="d-flex flex-wrap py-2">
-			<span>© 2023</span>
-		</footer>
-	</footer>
 
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

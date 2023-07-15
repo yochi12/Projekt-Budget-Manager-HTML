@@ -1,0 +1,16 @@
+.piggy-background{
+  display: block;
+}
+
+.piggy-background img{
+  position: fixed;
+  bottom: 0px;
+  right: 5px;
+  z-index: -1;
+}
+
+@media (max-width: 1024px){
+  .piggy-background img{
+    width: 200px;
+  }
+}
